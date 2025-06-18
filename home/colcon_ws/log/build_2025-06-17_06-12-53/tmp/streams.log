@@ -1,0 +1,37 @@
+[0.437s] Invoking command in '/home/demulab-kohei/colcon_ws/src/tmp': PYTHONPATH=/home/demulab-kohei/colcon_ws/build/tmp/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/demulab-kohei/colcon_ws/install/tmp/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tmp build --build-base /home/demulab-kohei/colcon_ws/build/tmp/build install --record /home/demulab-kohei/colcon_ws/build/tmp/install.log --install-scripts $base/lib/tmp --single-version-externally-managed install_data
+[0.586s] running egg_info
+[0.587s] creating ../../build/tmp/tmp.egg-info
+[0.587s] writing ../../build/tmp/tmp.egg-info/PKG-INFO
+[0.587s] writing dependency_links to ../../build/tmp/tmp.egg-info/dependency_links.txt
+[0.587s] writing entry points to ../../build/tmp/tmp.egg-info/entry_points.txt
+[0.587s] writing requirements to ../../build/tmp/tmp.egg-info/requires.txt
+[0.587s] writing top-level names to ../../build/tmp/tmp.egg-info/top_level.txt
+[0.588s] writing manifest file '../../build/tmp/tmp.egg-info/SOURCES.txt'
+[0.610s] reading manifest file '../../build/tmp/tmp.egg-info/SOURCES.txt'
+[0.611s] writing manifest file '../../build/tmp/tmp.egg-info/SOURCES.txt'
+[0.611s] running build
+[0.611s] running build_py
+[0.611s] creating /home/demulab-kohei/colcon_ws/build/tmp/build
+[0.611s] creating /home/demulab-kohei/colcon_ws/build/tmp/build/lib
+[0.611s] creating /home/demulab-kohei/colcon_ws/build/tmp/build/lib/tmp
+[0.611s] copying tmp/__init__.py -> /home/demulab-kohei/colcon_ws/build/tmp/build/lib/tmp
+[0.611s] copying tmp/receive_laser_data.py -> /home/demulab-kohei/colcon_ws/build/tmp/build/lib/tmp
+[0.611s] running install
+[0.612s] running install_lib
+[0.612s] creating /home/demulab-kohei/colcon_ws/install/tmp/lib/python3.8/site-packages/tmp
+[0.612s] copying /home/demulab-kohei/colcon_ws/build/tmp/build/lib/tmp/__init__.py -> /home/demulab-kohei/colcon_ws/install/tmp/lib/python3.8/site-packages/tmp
+[0.612s] copying /home/demulab-kohei/colcon_ws/build/tmp/build/lib/tmp/receive_laser_data.py -> /home/demulab-kohei/colcon_ws/install/tmp/lib/python3.8/site-packages/tmp
+[0.613s] byte-compiling /home/demulab-kohei/colcon_ws/install/tmp/lib/python3.8/site-packages/tmp/__init__.py to __init__.cpython-38.pyc
+[0.613s] byte-compiling /home/demulab-kohei/colcon_ws/install/tmp/lib/python3.8/site-packages/tmp/receive_laser_data.py to receive_laser_data.cpython-38.pyc
+[0.614s] running install_data
+[0.614s] creating /home/demulab-kohei/colcon_ws/install/tmp/share/ament_index
+[0.614s] creating /home/demulab-kohei/colcon_ws/install/tmp/share/ament_index/resource_index
+[0.614s] creating /home/demulab-kohei/colcon_ws/install/tmp/share/ament_index/resource_index/packages
+[0.614s] copying resource/tmp -> /home/demulab-kohei/colcon_ws/install/tmp/share/ament_index/resource_index/packages
+[0.614s] copying package.xml -> /home/demulab-kohei/colcon_ws/install/tmp/share/tmp
+[0.614s] running install_egg_info
+[0.615s] Copying ../../build/tmp/tmp.egg-info to /home/demulab-kohei/colcon_ws/install/tmp/lib/python3.8/site-packages/tmp-0.0.0-py3.8.egg-info
+[0.615s] running install_scripts
+[0.627s] Installing laser_data_loader script to /home/demulab-kohei/colcon_ws/install/tmp/lib/tmp
+[0.627s] writing list of installed files to '/home/demulab-kohei/colcon_ws/build/tmp/install.log'
+[0.639s] Invoked command in '/home/demulab-kohei/colcon_ws/src/tmp' returned '0': PYTHONPATH=/home/demulab-kohei/colcon_ws/build/tmp/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/demulab-kohei/colcon_ws/install/tmp/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tmp build --build-base /home/demulab-kohei/colcon_ws/build/tmp/build install --record /home/demulab-kohei/colcon_ws/build/tmp/install.log --install-scripts $base/lib/tmp --single-version-externally-managed install_data

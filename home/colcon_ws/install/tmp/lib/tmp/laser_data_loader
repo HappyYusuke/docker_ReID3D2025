@@ -1,0 +1,12 @@
+#!/usr/bin/python3
+# EASY-INSTALL-ENTRY-SCRIPT: 'tmp','console_scripts','laser_data_loader'
+__requires__ = 'tmp'
+import re
+import sys
+from pkg_resources import load_entry_point
+
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw?|\.exe)?$', '', sys.argv[0])
+    sys.exit(
+        load_entry_point('tmp', 'console_scripts', 'laser_data_loader')()
+    )

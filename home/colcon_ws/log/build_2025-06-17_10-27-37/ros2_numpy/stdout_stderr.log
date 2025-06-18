@@ -1,0 +1,65 @@
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+-- Found FastRTPS: /opt/ros/foxy/include  
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+-- Found rclpy: 1.0.13 (/opt/ros/foxy/share/rclpy/cmake)
+-- Found ament_cmake_pytest: 0.9.12 (/opt/ros/foxy/share/ament_cmake_pytest/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/demulab-kohei/colcon_ws/build/ros2_numpy
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/demulab-kohei/colcon_ws/install/ros2_numpy/share/ros2_numpy/environment/pythonpath.sh
+-- Symlinking: /home/demulab-kohei/colcon_ws/install/ros2_numpy/share/ros2_numpy/environment/pythonpath.dsv
+-- Symlinking: /home/demulab-kohei/colcon_ws/install/ros2_numpy/lib/python3.8/site-packages/ros2_numpy/__init__.py
+-- Symlinking: /home/demulab-kohei/colcon_ws/install/ros2_numpy/lib/python3.8/site-packages/ros2_numpy/geometry.py
+-- Symlinking: /home/demulab-kohei/colcon_ws/install/ros2_numpy/lib/python3.8/site-packages/ros2_numpy/image.py
+-- Symlinking: /home/demulab-kohei/colcon_ws/install/ros2_numpy/lib/python3.8/site-packages/ros2_numpy/laser_scan.py
+-- Symlinking: /home/demulab-kohei/colcon_ws/install/ros2_numpy/lib/python3.8/site-packages/ros2_numpy/occupancy_grid.py
+-- Symlinking: /home/demulab-kohei/colcon_ws/install/ros2_numpy/lib/python3.8/site-packages/ros2_numpy/point_cloud2.py
+-- Symlinking: /home/demulab-kohei/colcon_ws/install/ros2_numpy/lib/python3.8/site-packages/ros2_numpy/registry.py
+-- Symlinking: /home/demulab-kohei/colcon_ws/install/ros2_numpy/share/ament_index/resource_index/package_run_dependencies/ros2_numpy
+-- Symlinking: /home/demulab-kohei/colcon_ws/install/ros2_numpy/share/ament_index/resource_index/parent_prefix_path/ros2_numpy
+-- Symlinking: /home/demulab-kohei/colcon_ws/install/ros2_numpy/share/ros2_numpy/environment/ament_prefix_path.sh
+-- Symlinking: /home/demulab-kohei/colcon_ws/install/ros2_numpy/share/ros2_numpy/environment/ament_prefix_path.dsv
+-- Symlinking: /home/demulab-kohei/colcon_ws/install/ros2_numpy/share/ros2_numpy/environment/path.sh
+-- Symlinking: /home/demulab-kohei/colcon_ws/install/ros2_numpy/share/ros2_numpy/environment/path.dsv
+-- Symlinking: /home/demulab-kohei/colcon_ws/install/ros2_numpy/share/ros2_numpy/local_setup.bash
+-- Symlinking: /home/demulab-kohei/colcon_ws/install/ros2_numpy/share/ros2_numpy/local_setup.sh
+-- Symlinking: /home/demulab-kohei/colcon_ws/install/ros2_numpy/share/ros2_numpy/local_setup.zsh
+-- Symlinking: /home/demulab-kohei/colcon_ws/install/ros2_numpy/share/ros2_numpy/local_setup.dsv
+-- Symlinking: /home/demulab-kohei/colcon_ws/install/ros2_numpy/share/ros2_numpy/package.dsv
+-- Symlinking: /home/demulab-kohei/colcon_ws/install/ros2_numpy/share/ament_index/resource_index/packages/ros2_numpy
+-- Symlinking: /home/demulab-kohei/colcon_ws/install/ros2_numpy/share/ros2_numpy/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Symlinking: /home/demulab-kohei/colcon_ws/install/ros2_numpy/share/ros2_numpy/cmake/ros2_numpyConfig.cmake
+-- Symlinking: /home/demulab-kohei/colcon_ws/install/ros2_numpy/share/ros2_numpy/cmake/ros2_numpyConfig-version.cmake
+-- Symlinking: /home/demulab-kohei/colcon_ws/install/ros2_numpy/share/ros2_numpy/package.xml
+Listing '/home/demulab-kohei/colcon_ws/install/ros2_numpy/lib/python3.8/site-packages/ros2_numpy'...
+Compiling '/home/demulab-kohei/colcon_ws/install/ros2_numpy/lib/python3.8/site-packages/ros2_numpy/__init__.py'...
+Compiling '/home/demulab-kohei/colcon_ws/install/ros2_numpy/lib/python3.8/site-packages/ros2_numpy/geometry.py'...
+Compiling '/home/demulab-kohei/colcon_ws/install/ros2_numpy/lib/python3.8/site-packages/ros2_numpy/image.py'...
+Compiling '/home/demulab-kohei/colcon_ws/install/ros2_numpy/lib/python3.8/site-packages/ros2_numpy/laser_scan.py'...
+Compiling '/home/demulab-kohei/colcon_ws/install/ros2_numpy/lib/python3.8/site-packages/ros2_numpy/occupancy_grid.py'...
+Compiling '/home/demulab-kohei/colcon_ws/install/ros2_numpy/lib/python3.8/site-packages/ros2_numpy/point_cloud2.py'...
+Compiling '/home/demulab-kohei/colcon_ws/install/ros2_numpy/lib/python3.8/site-packages/ros2_numpy/registry.py'...

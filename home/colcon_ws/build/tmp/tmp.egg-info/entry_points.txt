@@ -1,0 +1,4 @@
+[console_scripts]
+laser_data_loader = tmp.receive_laser_data:main
+person_detector_from_laser = tmp.receive_laser_data1:main
+

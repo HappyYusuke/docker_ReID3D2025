@@ -1,0 +1,7 @@
+{
+  "package_name": "livox_ros_driver2",
+  "non_idl_tuples": [
+    "/home/demulab-kohei/colcon_ws/src/livox_ros_driver2:msg/CustomPoint.msg",
+    "/home/demulab-kohei/colcon_ws/src/livox_ros_driver2:msg/CustomMsg.msg"
+  ]
+}

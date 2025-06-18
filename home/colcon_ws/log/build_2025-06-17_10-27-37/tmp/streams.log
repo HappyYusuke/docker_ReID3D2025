@@ -1,0 +1,17 @@
+[0.450s] Invoking command in '/home/demulab-kohei/colcon_ws/build/tmp': PYTHONPATH=/home/demulab-kohei/colcon_ws/build/tmp/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/demulab-kohei/colcon_ws/install/tmp/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/demulab-kohei/colcon_ws/build/tmp/build --no-deps symlink_data
+[0.611s] running develop
+[0.706s] running egg_info
+[0.706s] writing tmp.egg-info/PKG-INFO
+[0.706s] writing dependency_links to tmp.egg-info/dependency_links.txt
+[0.706s] writing entry points to tmp.egg-info/entry_points.txt
+[0.706s] writing requirements to tmp.egg-info/requires.txt
+[0.706s] writing top-level names to tmp.egg-info/top_level.txt
+[0.728s] reading manifest file 'tmp.egg-info/SOURCES.txt'
+[0.729s] writing manifest file 'tmp.egg-info/SOURCES.txt'
+[0.753s] running build_ext
+[0.753s] Creating /home/demulab-kohei/colcon_ws/install/tmp/lib/python3.8/site-packages/tmp.egg-link (link to .)
+[0.753s] Installing laser_data_loader script to /home/demulab-kohei/colcon_ws/install/tmp/lib/tmp
+[0.753s] 
+[0.754s] Installed /home/demulab-kohei/colcon_ws/build/tmp
+[0.754s] running symlink_data
+[0.768s] Invoked command in '/home/demulab-kohei/colcon_ws/build/tmp' returned '0': PYTHONPATH=/home/demulab-kohei/colcon_ws/build/tmp/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/demulab-kohei/colcon_ws/install/tmp/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/demulab-kohei/colcon_ws/build/tmp/build --no-deps symlink_data
