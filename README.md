@@ -1,5 +1,5 @@
 # docker_ReID3D2025
-本リポジトリは、3D-LiDAR（[LIVOX MID-360](https://www.livoxtech.com/jp/mid-360)）と[ReID3D](https://github.com/GWxuan/ReID3D.git)を用いた人追従を可能にしたDocker環境です。
+本リポジトリは、3D-LiDAR（[LIVOX MID-360](https://www.livoxtech.com/jp/mid-360)）と[ReID3D](https://github.com/GWxuan/ReID3D.git)を用いて人追従を可能にしたDocker環境です。
 </br>
 
 # Installation
