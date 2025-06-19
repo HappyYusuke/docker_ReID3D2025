@@ -8,10 +8,12 @@
 ```
 git clone https://github.com/HappyYusuke/docker_ReID3D2025.git
 ```
+
 </br>
 
 zip形式のファイルを以下URLからホームディレクトリへダウンロードする</br>
 https://kanazawa-it.box.com/s/0aja3txig7wyjgq5p30m7gs3becye8k7
+
 </br>
 
 setup.shを実行する
