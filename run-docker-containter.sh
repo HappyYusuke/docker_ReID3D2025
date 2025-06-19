@@ -44,5 +44,4 @@ if [ ! `docker ps -f name=$DOCKER_CONTAINER_NAME -q` ]; then
     --rm $DOCKER_IMAGE_NAME
 fi
 
-docker exec -u $(id -u):$(id -g) -w /home/$USER -e DISPLAY -it $DOCKER_CONTAINER_NAME bash
-#docker exec -u 0 -w /home/$USER -e DISPLAY -it $DOCKER_CONTAINER_NAME bash
+docker exec -u $(id -u):$(id -g) -w $HOME -e DISPLAY -it $DOCKER_CONTAINER_NAME bash

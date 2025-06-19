@@ -1455,3 +1455,5 @@ rviz2
 ping 192.168.1.115
 terminator 
 vim .bashrc 
+ls
+cd do
