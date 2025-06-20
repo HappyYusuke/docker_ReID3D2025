@@ -13,7 +13,8 @@ import torch.nn.functional as F
 import collections
 
 # モデルとユーティリティ関数のインポート
-sys.path.insert(0, '/home/demulab-kohei/ReID3D/reidnet/')
+HOME_DIR = os.environ['HOME']
+sys.path.insert(0, f'{HOME_DIR}/ReID3D/reidnet/')
 from model import network
 
 # normalize_point_cloud はクラスの状態に依存しないため、クラス外のヘルパー関数としておくのが適切
@@ -63,7 +64,7 @@ class LaserDataLoader(Node):
     def _load_model(self):
         """モデルをロードして初期化する"""
         net = torch.nn.DataParallel(network.reid3d(1024, num_class=222, stride=1))
-        weight = torch.load('/home/demulab-kohei/ReID3D/reidnet/log/ckpt_best.pth')
+        weight = torch.load(f'{HOME_DIR}/ReID3D/reidnet/log/ckpt_best.pth')
         net.load_state_dict(weight)
         net.to(self.device)
         net.eval()
