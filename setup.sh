@@ -5,8 +5,8 @@ echo "unzipped!"
 
 # 移動
 echo -e "\nCopying files ..."
-cp -r $HOME\large_files_docker_ReID3D2025/ReID3D $HOME/docker_ReID3D2025/
-cp -r $HOME\large_files_docker_ReID3D2025/ros2_bags $HOME/docker_ReID3D2025/
+cp -r $HOME/large_files_docker_ReID3D2025/ReID3D $HOME/docker_ReID3D2025/home
+cp -r $HOME/large_files_docker_ReID3D2025/ros2_bags $HOME/docker_ReID3D2025/home
 echo "Copied!"
 
 # Docker IMAGE を取り込み

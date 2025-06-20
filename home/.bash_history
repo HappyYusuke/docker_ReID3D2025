@@ -1470,3 +1470,67 @@ cd
 ls
 cd
 terminator 
+ls
+cd colcon_ws/
+ls
+cd src/
+ls
+git clone https://github.com/Livox-SDK/livox_ros_driver2.git
+git clone https://github.com/Box-Robotics/ros2_numpy.git
+cd livox_ros_driver2/
+./build.sh ROS2
+cd ~/colcon_ws/
+ls
+cd src/livox_ros_driver2/
+source ~/colcon_ws/install/setup.bash
+ls
+cd
+ls
+cd colcon_ws/
+ls
+cd src/
+ls
+cd ../
+ls
+ros2 run follow_me_by_3d_lidar person_detector 
+rviz2 
+ros2 bag play ~/ros2_bags/lidar_data_three_person
+terminator 
+cd
+ls
+ros2 run follow_me_by_3d_lidar person_detector 
+ls
+cd ReID3D/
+ls
+cd reidnet/
+ls
+cd model/
+ls
+cd ../
+ls
+cd ../
+ls
+cd database/
+ls
+cd LReID_final/
+ls
+cd outputs/
+ls
+cd ../
+ls
+cd ../
+ls
+cd ../
+ls
+cd LReID/
+ls
+cd info/
+ls
+cd ./
+cd ../
+ls
+cd ../
+ls
+cd reidnet/
+ls
+terminator 
