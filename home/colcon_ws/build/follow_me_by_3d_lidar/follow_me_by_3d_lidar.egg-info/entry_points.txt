@@ -1,3 +1,0 @@
-[console_scripts]
-person_detector = follow_me_by_3d_lidar.person_detector:main
-

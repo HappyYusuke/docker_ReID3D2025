@@ -1457,3 +1457,16 @@ terminator
 vim .bashrc 
 ls
 cd do
+ls
+cd colcon_ws/
+ls
+cd src/
+ls
+cd livox_ros_driver2/
+./build.sh ROS2
+cd ../
+ls
+cd
+ls
+cd
+terminator 

@@ -1,1 +1,0 @@
-/home/demulab-kohei/colcon_ws/src/livox_ros_driver2/msg/CustomPoint.msg

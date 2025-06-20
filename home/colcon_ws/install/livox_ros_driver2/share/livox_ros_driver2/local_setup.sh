@@ -1,1 +1,0 @@
-/home/demulab-kohei/colcon_ws/build/livox_ros_driver2/ament_cmake_environment_hooks/local_setup.sh
