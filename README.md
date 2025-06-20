@@ -26,3 +26,25 @@ setup.shを実行する
 cd ~/docker_ReID3D2025/
 ./setup.sh
 ```
+
+</br>
+
+Dockerを起動する
+Dockerを起動すると、プロンプトの@以降がros2になる。
+
+```
+./run-docker-containter.sh
+```
+
+</br>
+
+colcon_ws/srcに、[livox_ros_driver2](https://github.com/Livox-SDK/livox_ros_driver2.git)と[ros2_numpy](https://github.com/Box-Robotics/ros2_numpy.git)をクローンしビルドする。
+
+```
+cd ~/colcon_ws/src
+git clone https://github.com/Livox-SDK/livox_ros_driver2.git
+git clone https://github.com/Box-Robotics/ros2_numpy.git
+cd livox_ros_driver2/
+./build.sh ROS2
+source ~/colcon_ws/install/setup.bash
+```
