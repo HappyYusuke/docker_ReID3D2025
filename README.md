@@ -70,7 +70,7 @@ Dockerを起動。
 follow_me_by_3d_lidarを起動。
 
 ```
-ros2 launch reid_pillar_hf rviz_reid3d.launch.py
+ros2 launch reid_pillar_hf rviz_reid3d_launch.py
 ```
 
 </br>
@@ -143,7 +143,7 @@ ros2 launch livox_ros_driver2 rviz_MID360_launch.py
 follow_me_by_3d_lidarを実行します。
 
 ```
-ros2 launch reid_pillar_hf rviz_reid3d.launch.py
+ros2 launch reid_pillar_hf rviz_reid3d_launch.py
 ```
 
 </br>
