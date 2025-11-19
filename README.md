@@ -39,12 +39,17 @@ Dockerを起動すると、プロンプトの@以降がros2になる。
 
 </br>
 
-colcon_ws/srcに、[livox_ros_driver2](https://github.com/Livox-SDK/livox_ros_driver2.git)と[ros2_numpy](https://github.com/Box-Robotics/ros2_numpy.git)をクローンしビルドする。
+colcon_ws/srcに以下のリポジトリをクローンしビルドする。
+
+* [livox_ros_driver2](https://github.com/Livox-SDK/livox_ros_driver2.git)
+* [ros2_numpy](https://github.com/Box-Robotics/ros2_numpy.git)
+* [reid_pillar_hf](https://github.com/HappyYusuke/reid_pillar_hf.git)
 
 ```
 cd ~/colcon_ws/src
 git clone https://github.com/Livox-SDK/livox_ros_driver2.git
 git clone https://github.com/Box-Robotics/ros2_numpy.git
+git clone https://github.com/HappyYusuke/reid_pillar_hf.git
 cd livox_ros_driver2/
 ./build.sh ROS2
 source ~/colcon_ws/install/setup.bash
@@ -53,7 +58,7 @@ source ~/colcon_ws/install/setup.bash
 </br>
 
 # Usage
-### ros2 bagを使ってfollow_me_by_3d_lidarを試す
+### ros2 bagを使って試す
 Dockerを起動。
 
 ```
@@ -65,7 +70,7 @@ Dockerを起動。
 follow_me_by_3d_lidarを起動。
 
 ```
-ros2 run follow_me_by_3d_lidar person_detector
+ros2 launch reid_pillar_hf rviz_reid3d.launch.py
 ```
 
 </br>
@@ -75,32 +80,6 @@ ros2 bag play
 ```
 ros2 bag play ~/ros2_bags/lidar_data_three_person
 ```
-
-</br>
-
-rviz2を起動。
-
-```
-rviz2
-```
-
-</br>
-
-rviz2を起動後、「Fixed Frame」を`livox_frame`に変更してください。
-
-<img src=fig/2.jpg width=500>
-
-</br>
-
-rviz2で認識できているか確認します。
-1. rviz2のウィンドウ左下にある「Add」をクリックしてください。
-2. 「By topic」タブに切り替え、以下の3つをそれぞれ選択し、ウィンドウ右下の「OK」をクリックしてください。
-
-    - 「`/livox/lidar`のPointCloud2」、
-    - 「`/person_label`のMarker」、
-    - 「`/person_points`のPointCloud2」
-
-<img src=fig/1.jpg width=500>
 
 </br>
 
@@ -164,7 +143,7 @@ ros2 launch livox_ros_driver2 rviz_MID360_launch.py
 follow_me_by_3d_lidarを実行します。
 
 ```
-ros2 run follow_me_by_3d_lidar person_detector
+ros2 launch reid_pillar_hf rviz_reid3d.launch.py
 ```
 
 </br>
