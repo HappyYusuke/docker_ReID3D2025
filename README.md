@@ -19,6 +19,16 @@ https://kanazawa-it.box.com/s/0aja3txig7wyjgq5p30m7gs3becye8k7
 mv ~/Downloads/large_files_docker_ReID3D2025.zip ~/
 ```
 
+> [!NOTE]
+> Dockerがインストールされていない場合
+> ```bash
+> 本リポジトリに移動
+> cd ~/docker_ros2_tao_pointpillars
+>
+> # Dockerをインストール
+> ./install-docker.sh
+> ```
+
 </br>
 
 setup.shを実行する。
