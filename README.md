@@ -97,7 +97,7 @@ ros2 bag play ~/ros2_bags/lidar_data_three_person
 
 </br>
 
-### 実機を使ってfollow_me_by_3d_lidarを試す
+### 実機を使ってReID3Dを試す
 
 イーサネットを設定します。
 1. PCの設定を開き、「Network」を選択してください。
