@@ -121,7 +121,7 @@ ros2 bag play ~/ros2_bags/lidar_data_three_person
 
 6. ウィンドウ右上の「Add」をクリックしてください。
 
-<img src=fig/3.jpg width=500>
+<img src=fig/1.jpg width=500>
 
 </br>
 
