@@ -159,7 +159,7 @@ ros2 launch livox_ros_driver2 rviz_MID360_launch.py
 
 </br>
 
-follow_me_by_3d_lidarを実行します。
+reid_pillar_hfを実行します。
 
 ```
 ros2 launch reid_pillar_hf rviz_reid3d_launch.py
