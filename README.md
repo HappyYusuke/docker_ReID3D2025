@@ -84,9 +84,22 @@ Dockerを起動。
 ./run-docker-containter.sh
 ```
 
+<br>
+
+`terminator`を起動
+```bash
+terminator
+```
+
+`terminator`は以下の通りターミナルを分割できます。
+- ctrl+shift+oで上下分割
+- ctrl+shift+eで左右分割
+- ctrl+shift+nや+pで画面間移動
+- ctrl+shift+wで画面を一つ閉じる
+
 </br>
 
-follow_me_by_3d_lidarを起動。
+reid_pillar_hfを起動。
 
 ```
 ros2 launch reid_pillar_hf rviz_reid3d_launch.py
