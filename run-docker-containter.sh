@@ -1,6 +1,6 @@
 #!/bin/bash
 xhost +
-DOCKER_IMAGE_NAME=kanazawa/reid3d_ready:latest
+DOCKER_IMAGE_NAME=nazawa28/reid3d:latest
 DOCKER_CONTAINER_NAME=reid3d_ready
 
 #GPUが
