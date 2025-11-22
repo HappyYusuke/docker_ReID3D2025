@@ -12,23 +12,6 @@ git clone https://github.com/HappyYusuke/docker_ReID3D2025.git
 
 </br>
 
-zip形式のrosbag2ファイルを以下URLからダウンロードする。</br>
-https://kanazawa-it.box.com/s/tuikkndo4hfgks5x6o0am811my0cdz8g
-
-<br>
-
-解凍し移動。
-```
-# 解凍
-cd ~/Downloads
-unzip ros2_bags.zip
-
-# 本リポジトリの`home`へ移動
-mv ros2_bags ~/docker_ReID3D2025/home
-```
-
-<br>
-
 > [!NOTE]
 > Dockerがインストールされていない場合
 > ```bash
@@ -41,17 +24,8 @@ mv ros2_bags ~/docker_ReID3D2025/home
 
 </br>
 
-setup.shを実行する。
-
-```
-cd ~/docker_ReID3D2025/
-./setup.sh
-```
-
-</br>
-
-Dockerを起動する。
-Dockerを起動すると、プロンプトの@以降がros2になる。
+Dockerを起動する。<br>
+Docker Imageのロードが始まり、起動するとプロンプトの@以降がros2になる。
 
 ```
 ./run-docker-containter.sh
@@ -61,18 +35,43 @@ Dockerを起動すると、プロンプトの@以降がros2になる。
 
 colcon_ws/srcに以下のリポジトリをクローンしビルドする。
 
+* [ReID3D](https://github.com/GWxuan/ReID3D.git)
 * [livox_ros_driver2](https://github.com/Livox-SDK/livox_ros_driver2.git)
 * [ros2_numpy](https://github.com/Box-Robotics/ros2_numpy.git)
 * [reid_pillar_hf](https://github.com/HappyYusuke/reid_pillar_hf.git)
 
 ```
 cd ~/colcon_ws/src
+
+git clone https://github.com/GWxuan/ReID3D.git
 git clone https://github.com/Livox-SDK/livox_ros_driver2.git
 git clone https://github.com/Box-Robotics/ros2_numpy.git
 git clone https://github.com/HappyYusuke/reid_pillar_hf.git
+
 cd livox_ros_driver2/
 ./build.sh ROS2
 source ~/colcon_ws/install/setup.bash
+```
+
+<br>
+
+zipファイルを以下URLからダウンロードする。</br>
+https://kanazawa-it.box.com/s/jsde13gu1vscmgggf073i9a3vtfh0xob
+
+<br>
+
+ホストPCに戻ります。<br>
+ダウンロードしたzipファイルを解凍し移動する。
+```
+# 解凍
+cd ~/Downloads
+unzip large_files_docker_ReID3D2025.zip
+
+# 重みファイルを移動
+mv large_files_docker_ReID3D2025/ckpt_best.pth ~/docker_ReID3D2025/home/
+
+# ros2_bagsを移動
+mv large_files_docker_ReID3D2025/ros2_bags ~/docker_ReID3D2025/home/
 ```
 
 </br>
