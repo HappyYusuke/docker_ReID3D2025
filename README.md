@@ -12,12 +12,22 @@ git clone https://github.com/HappyYusuke/docker_ReID3D2025.git
 
 </br>
 
-zip形式のファイルを以下URLからホームディレクトリへダウンロードする。</br>
-https://kanazawa-it.box.com/s/0aja3txig7wyjgq5p30m7gs3becye8k7
+zip形式のrosbag2ファイルを以下URLからダウンロードする。</br>
+https://kanazawa-it.box.com/s/tuikkndo4hfgks5x6o0am811my0cdz8g
 
+<br>
+
+解凍し移動。
 ```
-mv ~/Downloads/large_files_docker_ReID3D2025.zip ~/
+# 解凍
+cd ~/Downloads
+unzip ros2_bags.zip
+
+# 本リポジトリの`home`へ移動
+mv ros2_bags ~/docker_ReID3D2025/home
 ```
+
+<br>
 
 > [!NOTE]
 > Dockerがインストールされていない場合
