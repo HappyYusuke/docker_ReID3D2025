@@ -77,7 +77,7 @@ mv large_files_docker_ReID3D2025/ros2_bags ~/docker_ReID3D2025/home/
 </br>
 
 # Usage
-### ros2 bagを使って試す
+## ros2 bagを使って試す
 Dockerを起動。
 
 ```
@@ -119,7 +119,7 @@ ros2 bag play ~/ros2_bags/lidar_data_three_person
 
 </br>
 
-### 実機を使ってReID3Dを試す
+## 実機を使ってReID3Dを試す
 
 ### イーサネットを設定します。
 1. PCの設定を開き、「Network」を選択してください。
@@ -182,7 +182,6 @@ source ~/colcon_ws/install/setup.bash
 </br>
 
 ### 起動
-
 MID-360のlaunchを実行します。
 ```bash
 ros2 launch livox_ros_driver2 rviz_MID360_launch.py
