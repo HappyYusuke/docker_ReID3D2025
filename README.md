@@ -38,7 +38,7 @@ colcon_ws/srcに以下のリポジトリをクローンしビルドする。
 * [ReID3D](https://github.com/GWxuan/ReID3D.git)
 * [livox_ros_driver2](https://github.com/Livox-SDK/livox_ros_driver2.git)
 * [ros2_numpy](https://github.com/Box-Robotics/ros2_numpy.git)
-* [reid_pillar_hf](https://github.com/HappyYusuke/reid_pillar_hf.git)
+* [harrp](https://github.com/HappyYusuke/harrp.git)
 
 ```
 cd ~/colcon_ws/src
@@ -46,7 +46,7 @@ cd ~/colcon_ws/src
 git clone https://github.com/GWxuan/ReID3D.git
 git clone https://github.com/Livox-SDK/livox_ros_driver2.git
 git clone https://github.com/Box-Robotics/ros2_numpy.git
-git clone https://github.com/HappyYusuke/reid_pillar_hf.git
+git clone https://github.com/HappyYusuke/harrp.git
 
 cd livox_ros_driver2/
 ./build.sh ROS2
@@ -99,10 +99,10 @@ terminator
 
 </br>
 
-reid_pillar_hfを起動。
+HARRPを起動。
 
 ```
-ros2 launch reid_pillar_hf rviz_reid3d_launch.py
+ros2 launch harrp rviz_reid3d_launch.py
 ```
 
 </br>
@@ -121,7 +121,7 @@ ros2 bag play ~/ros2_bags/lidar_data_three_person
 
 ### 実機を使ってReID3Dを試す
 
-イーサネットを設定します。
+### イーサネットを設定します。
 1. PCの設定を開き、「Network」を選択してください。
 2. 「Wired」の「＋」をクリックしてください。
 3. 「IPv4」タブを選択してください。
@@ -138,48 +138,63 @@ ros2 bag play ~/ros2_bags/lidar_data_three_person
 
 </br>
 
-`livox_ros_driver2`の設定ファイルを書き換えます。
+### `livox_ros_driver2`の設定ファイルを書き換えます。
 
 1. `./run-docker-containter.sh`でDockerを起動します。
    
-3. `MID360_config.json`を開きます。
+2. `MID360_config.json`を開きます。
 ```
 vim ~/colcon_ws/src/livox_ros_driver2/config/MID360_config.json
 ```
-2. `host_net_info`内のipを`192.168.1.50`に変更します。具体的な変更箇所は以下の通りです。
+3. `host_net_info`内のipを`192.168.1.50`に変更します。具体的な変更箇所は以下の通りです。
 
     - `"cmd_data_ip" : "192.168.1.50",`
     - `"push_msg_ip": "192.168.1.50",`
     - `"point_data_ip": "192.168.1.50",`
     - `"imu_data_ip" : "192.168.1.50",`
 
-3. `lidar_configs`のipを以下の手順で変更します。
+4. `lidar_configs`のipを以下の手順で変更します。
 
     - お手元のMID-360のシリアル番号末尾2桁をご確認ください（ここでは例として`15`とします）。
     - MID-360は`192.168.1.1XX/24`のいずれかに設定されます。（`192.168.1.115`となります）。
     - `ping 192.168.1.1XX`を実行し、応答があることを確認します。
     - 応答が確認できたら、`lidar_configs`のipアドレスを変更してください。
 
-4. `./build.sh ROS2`でビルド後、`source ~/colcon_ws/install/setup.bash`を実行します。
+<br>
+
+### `launch_ROS2/msg_MID360_launch.py`のパラメータを変更します。
+launchファイルを開きます。
+```bash
+vim ~/colcon_ws/src/livox_ros_driver2/launch_ROS2/msg_MID360_launch.py
+```
+
+`xfer_format   = 1`を`xfer_format   = 0`にしてください。
+
+<br>
+
+6. ビルド
+```bash
+cd ~/colcon_ws
+colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release
+source ~/colcon_ws/install/setup.bash
+```
 
 </br>
 
-MID-360のlaunchを実行します。
+### 起動
 
-```
+MID-360のlaunchを実行します。
+```bash
 ros2 launch livox_ros_driver2 rviz_MID360_launch.py
 ```
 
 </br>
 
-reid_pillar_hfを実行します。
-
-```
-ros2 launch reid_pillar_hf rviz_reid3d_launch.py
+harrpを実行します。
+```bash
+ros2 launch harrp rviz_reid3d_launch.py
 ```
 
 </br>
 
 rviz2で適宜認識の様子を確認してください。
-
-</br>
