@@ -40,17 +40,11 @@ colcon_ws/srcに以下のリポジトリをクローンしビルドする。
 * [ros2_numpy](https://github.com/Box-Robotics/ros2_numpy.git)
 * [harrp](https://github.com/HappyYusuke/harrp.git)
 
+<br>
+
+以下のシェルスクリプトを実行することでセットアップが完了します。
 ```
-cd ~/colcon_ws/src
-
-git clone https://github.com/GWxuan/ReID3D.git
-git clone https://github.com/Livox-SDK/livox_ros_driver2.git
-git clone https://github.com/Box-Robotics/ros2_numpy.git
-git clone https://github.com/HappyYusuke/harrp.git
-
-cd livox_ros_driver2/
-./build.sh ROS2
-source ~/colcon_ws/install/setup.bash
+./setup.sh
 ```
 
 <br>
