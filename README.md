@@ -33,16 +33,13 @@ Docker Imageのロードが始まり、起動するとプロンプトの@以降�
 
 </br>
 
-colcon_ws/srcに以下のリポジトリをクローンしビルドする。
+`setup.sh`を実行することでセットアップが完了します。
+> 以下のリポジトリがクローンされビルドされます。
+> * [ReID3D](https://github.com/GWxuan/ReID3D.git)
+> * [livox_ros_driver2](https://github.com/Livox-SDK/livox_ros_driver2.git)
+> * [ros2_numpy](https://github.com/Box-Robotics/ros2_numpy.git)
+> * [harrp](https://github.com/HappyYusuke/harrp.git)
 
-* [ReID3D](https://github.com/GWxuan/ReID3D.git)
-* [livox_ros_driver2](https://github.com/Livox-SDK/livox_ros_driver2.git)
-* [ros2_numpy](https://github.com/Box-Robotics/ros2_numpy.git)
-* [harrp](https://github.com/HappyYusuke/harrp.git)
-
-<br>
-
-以下のシェルスクリプトを実行することでセットアップが完了します。
 ```
 ./setup.sh
 ```
