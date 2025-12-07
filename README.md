@@ -59,7 +59,7 @@ cd ~/Downloads
 unzip large_files_docker_ReID3D2025.zip
 
 # 重みファイルを移動
-mv large_files_docker_ReID3D2025/ckpt_best.pth ~/docker_ReID3D2025/home/
+mv large_files_docker_ReID3D2025/ckpt_best.pth ~/docker_ReID3D2025/home/ReID3D/reidnet/log
 
 # ros2_bagsを移動
 mv large_files_docker_ReID3D2025/ros2_bags ~/docker_ReID3D2025/home/
