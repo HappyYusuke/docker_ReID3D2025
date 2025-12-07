@@ -2,6 +2,7 @@
 
 # リポジトリのクローン
 git clone https://github.com/GWxuan/ReID3D.git
+mkdir ~/ReID3D/reidnet/log
 
 mkdir -p ~/colcon_ws/src && cd ~/colcon_ws/src
 git clone https://github.com/Livox-SDK/livox_ros_driver2.git
