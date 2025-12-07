@@ -13,9 +13,14 @@ rosdep update
 rosdep install -i --from-path src --rosdistro foxy -y --ignore-src
 
 # ビルド
+cd ~/colcon_ws/src/livox_ros_driver2/
+./build.sh ROS2
+source ~/colcon_ws/install/setup.bash
 cd ~/colcon_ws
 colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release
 source ~/colcon_ws/install/setup.bash
 
 # ホームディレクトリに戻る
 cd ~/
+
+
