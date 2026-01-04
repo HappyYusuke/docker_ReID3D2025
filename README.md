@@ -16,7 +16,7 @@ git clone https://github.com/HappyYusuke/docker_ReID3D2025.git
 > Dockerがインストールされていない場合
 > ```bash
 > 本リポジトリに移動
-> cd ~/docker_ros2_tao_pointpillars
+> cd ~/docker_ReID3D2025
 >
 > # Dockerをインストール
 > ./install-docker.sh
